@@ -2,44 +2,45 @@
 <html lang="en">
 
   <!-- Head -->
-  <head>    <!-- Metadata, OpenGraph and Schema.org -->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <!-- Metadata, OpenGraph and Schema.org -->
     
     <!-- Website verification -->
-    <meta name="google-site-verification" content="google-site-verification=Ny_h4ylsHbCM51T6sUfUtAeJ_IWBvw_AKxKGFoB6g08" />
+    <meta name="google-site-verification" content="google-site-verification=Ny_h4ylsHbCM51T6sUfUtAeJ_IWBvw_AKxKGFoB6g08">
 
     <!-- Standard metadata -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Vishesh Kumar</title>
-    <meta name="author" content="Vishesh  Kumar" />
+    <meta name="author" content="Vishesh  Kumar">
     <meta name="description" content="Vishesh Kumar, Postdoctoral Researcher, tiilt lab, Northwestern University
-" />
-    <meta name="keywords" content="collaboration, making, design, games, learning" />
+">
+    <meta name="keywords" content="collaboration, making, design, games, learning">
 
 
     <!-- Bootstrap & MDB -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
 
     <!-- Fonts & Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700%7CRoboto+Slab:100,300,400,500,700%7CMaterial+Icons">
 
     <!-- Code Syntax Highlighting -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="none" id="highlight_theme_light" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
 
     <!-- Styles -->
     
-    <link rel="shortcut icon" href="/assets/img/vkfav.png"/>
+    <link rel="shortcut icon" href="/assets/img/vkfav.png">
     
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="canonical" href="http://localhost:4000/">
     
     <!-- Dark Mode -->
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
 
     <script src="/assets/js/theme.js"></script>
     <script src="/assets/js/dark_mode.js"></script>
@@ -80,17 +81,25 @@
               </li>
 
               <!-- Toogle theme mode -->
-              <div class="toggle-container">
-                <a id="light-toggle">
+              <li class="toggle-container">
+                <button id="light-toggle" title="Change theme">
                   <i class="fas fa-moon"></i>
                   <i class="fas fa-sun"></i>
-                </a>
-              </div>
+                </button>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
+
+      <!-- Scrolling Progress Bar -->
+      <progress id="progress" value="0">
+        <div class="progress-container">
+          <span class="progress-bar"></span>
+        </div>
+      </progress>
     </header>
+
 
     <!-- Content -->
     <div class="container mt-5">
@@ -105,14 +114,18 @@
 
         <article>
           <div class="profile float-right">
-<figure>
+
+              <figure>
 
   <picture>
-    <source media="(max-width: 480px)" srcset="/assets/img/pp2-480.webp"></source>
-    <source media="(max-width: 800px)" srcset="/assets/img/pp2-800.webp"></source>
-    <source media="(max-width: 1400px)" srcset="/assets/img/pp2-1400.webp"></source>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/pp2-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/pp2-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/pp2-1400.webp"></source>
+    
+
     <!-- Fallback to the original file -->
-    <img class="img-fluid z-dept-1 rounded" src="/assets/img/pp2.jpg" alt="pp2.jpg">
+    <img src="/assets/img/pp2.jpg" class="img-fluid z-depth-1 rounded" width="auto" height="auto" alt="pp2.jpg" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -125,70 +138,158 @@
           </div>
 
           <div class="clearfix">
-            <p><strong>Current</strong>: I’m a postdoctoral researcher at the <a href="https://tiilt.northwestern.edu/" target="_blank" rel="noopener noreferrer"><em>tiilt</em> lab</a>, <a href="https://www.northwestern.edu/" target="_blank" rel="noopener noreferrer">Northwestern University</a>.  I try my best to keep my <a href="http://bit.ly/vishesh-cv-doc" target="_blank" rel="noopener noreferrer">CV up to date</a>.</p>
+            <p><a href="http://bit.ly/vishesh-cv-doc" rel="external nofollow noopener" target="_blank">Curriculum Vitae (last updated November, 2023)</a></p>
 
-<p><strong>Background</strong>: I grew up in <a href="https://en.wikipedia.org/wiki/New_Delhi" target="_blank" rel="noopener noreferrer">New Delhi</a> (1994-2000 &amp; 2004-2011) and <a href="https://en.wikipedia.org/wiki/Visakhapatnam" target="_blank" rel="noopener noreferrer">Vishakhapatnam</a> (2000-04). Received a <a href="https://www.iitg.ac.in/design/Overview.html" target="_blank" rel="noopener noreferrer">Bachelor’s of Design</a> from the <a href="https://www.iitg.ac.in/design/" target="_blank" rel="noopener noreferrer">Indian Institute of Technology, Guwahati</a> (2011-2015). Then got a Ph.D. at the <a href="https://www.wisc.edu/" target="_blank" rel="noopener noreferrer">University of Wisconsin-Madison</a> in the Department of Curriculum and Instruction (in the <a href="https://ci.education.wisc.edu/research/digital-media/" target="_blank" rel="noopener noreferrer"><em>Design, Informal, and Creative Education</em> program</a>), advised by <a href="https://ci.education.wisc.edu/fac-staff/berland-matthew/" target="_blank" rel="noopener noreferrer">Matthew Berland</a>.</p>
+<p><strong>Current</strong>: I’m a postdoctoral researcher at the <a href="https://tiilt.northwestern.edu/" rel="external nofollow noopener" target="_blank"><em>tiilt</em> lab</a>, <a href="https://www.northwestern.edu/" rel="external nofollow noopener" target="_blank">Northwestern University</a>.</p>
 
-<p>In my current position, I work with <a href="https://tiilt.northwestern.edu/people/" target="_blank" rel="noopener noreferrer">Marcelo Worsley</a>, primarily on the <a href="https://tiilt.northwestern.edu/projects/sportsense/index.html" target="_blank" rel="noopener noreferrer">SportSense</a> project leading the tech development of numerous tools and activities for sports spaces, implementation of different curricula using these tools, and research around these implementations. I also help mentor undergraduates and graduate students in the lab and assist with research across some of the other ongoing projects as well.</p>
+<p><strong>Background</strong>: I grew up in <a href="https://en.wikipedia.org/wiki/New_Delhi" rel="external nofollow noopener" target="_blank">New Delhi</a> (1994-2000 &amp; 2004-2011) and <a href="https://en.wikipedia.org/wiki/Visakhapatnam" rel="external nofollow noopener" target="_blank">Vishakhapatnam</a> (2000-04). Received a <a href="https://www.iitg.ac.in/design/Overview.html" rel="external nofollow noopener" target="_blank">Bachelor’s of Design</a> from the <a href="https://www.iitg.ac.in/design/" rel="external nofollow noopener" target="_blank">Indian Institute of Technology, Guwahati</a> (2011-2015). Then got a Ph.D. at the <a href="https://www.wisc.edu/" rel="external nofollow noopener" target="_blank">University of Wisconsin-Madison</a> in the Department of Curriculum and Instruction (in the <a href="https://ci.education.wisc.edu/research/digital-media/" rel="external nofollow noopener" target="_blank"><em>Design, Informal, and Creative Education</em> program</a>), advised by <a href="https://ci.education.wisc.edu/fac-staff/berland-matthew/" rel="external nofollow noopener" target="_blank">Matthew Berland</a>.</p>
+
+<p>In my current position, I work with <a href="https://tiilt.northwestern.edu/people/" rel="external nofollow noopener" target="_blank">Marcelo Worsley</a>, primarily on the <a href="https://tiilt.northwestern.edu/projects/sportsense/index.html" rel="external nofollow noopener" target="_blank">SportSense</a> project leading the tech development of numerous tools and activities for sports spaces, implementation of different curricula using these tools, and research around these implementations. I also help mentor undergraduates and graduate students in the lab and assist with research across some of the other ongoing projects as well.</p>
 
           </div>
 
-          <!-- News -->          
+          <!-- News -->
+          <h2><a href="/news/" style="color: inherit;">news</a></h2>          
           <div class="news">
-            <h2>news</h2>
-            <div class="table-responsive">
-              <table class="table table-sm table-borderless"> 
-                <tr>
-                  <th scope="row">Apr 13, 2023</th>
-                  <td>
-                    Presenting across projects at <a href="https://convention2.allacademic.com/one/aera/aera23/index.php?PHPSESSID=f2bmqahghfp9ngq7hqoq8cnr1s&amp;cmd=Online+Program+Search&amp;program_focus=fulltext_search&amp;search_mode=content&amp;offset=0&amp;search_text=vishesh+kumar" target="_blank" rel="noopener noreferrer">AERA 2023</a> in Chicago, IL, USA.
- 
-                  </td>
-                </tr> 
-                <tr>
-                  <th scope="row">Mar 15, 2023</th>
-                  <td>
-                    Attending <a href="https://sigcse2023.sigcse.org/" target="_blank" rel="noopener noreferrer">SIGCSE</a> in Toronto, Canada to co-present posters on our introducting programmable sports technologies at a summer sports camp.
- 
-                  </td>
-                </tr> 
-                <tr>
-                  <th scope="row">Jan 11, 2023</th>
-                  <td>
-                    Attending <a href="https://aaai-23.aaai.org/wp-content/uploads/2023/01/EAAI-23-Schedule-FEB05.pdf" target="_blank" rel="noopener noreferrer">EAAI Symposium</a> to present our work on Scratch for Sports in Washington, D.C., USA.
- 
-                  </td>
-                </tr> 
-              </table>
-            </div> 
+            <p>No news so far...</p> 
           </div>
+
 
           <!-- Selected papers -->
+          <h2><a href="/publications/" style="color: inherit;">selected publications</a></h2>
           <div class="publications">
-            <h2>selected publications</h2>
             <ol class="bibliography">
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">ILE</abbr></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">IDC</abbr></div>
 
         <!-- Entry bib key -->
-        <div id="kumar2022scamp" class="col-sm-8">
+        <div id="10.1145/3585088.3594492" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">PaintBall – Coding Sports Into Art for Cross-Interest Computational Connections</div>
+        <!-- Author -->
+        <div class="author">
         
-          <!-- Title -->
-          <div class="title">SCAMP: an analytical framework for examining flexible social playfulness around interactive museum exhibits</div>
-          <!-- Author -->
-          <div class="author">
-                  <em>Kumar, Vishesh</em>, Berland, Matthew, Lyons, Leilah, and Pinzur, Beth
-          </div>
 
-          <!-- Journal/Book title and date -->
-          <div class="periodical">
-            <em>Interactive Learning Environments</em> 2022
-          </div>
+        <em>Vishesh Kumar</em>, Safinah Ali, and Marcelo Worsley</div>
+
+        <!-- Journal/Book title and date -->
         
+        
+        <div class="periodical">
+          <em>In Proceedings of the 22nd Annual ACM Interaction Design and Children Conference</em>, 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://doi.org/10.1145/3585088.3594492" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+            <a href="/assets/pdf/idc23-paintball.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-doi="10.1145/3585088.3594492" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+            <span class="__dimensions_badge_embed__" data-doi="10.1145/3585088.3594492" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>In this demo, we present PaintBall, a tool that facilitates creative art creation and manipulation from movement data. It is designed as a public computation project aimed to foster conversation and connection between youth with different interests (specifically art, sports, or computing) at a community center around the shared activity of creating these rich visualizations and art pieces. We expect the design features of PaintBall – public art and tinkering work, cross interest engagement, and discrete artifact generation – to be key ideas that can be used across a variety of contexts and enable rich community development among youth by providing novel touchstones for conversation as well as reflection on these preexisting activities themselves. The following URL will host a working demo of this project – https://tiilt.northwestern.edu/projects/sportsense/paintball</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">ISLS</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="kumar2023expansive" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Expansive Lenses to Examine Interventions (of) Moving Across Contexts</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <em>Vishesh Kumar</em>, Deborah A Fields, Paulo Blikstein, and
+          <span class="more-authors" title="click to view 8 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '8 more authors' ? 'Kylie Peppler, Maggie Dahn, Mizuko Ito, Melissa Braaten, Ronni Hayden, Ricarose Roque, Michael Alan Chang,  others' : '8 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">8 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In Proceedings of the 17th International Conference of the Learning Sciences-ICLS 2023, pp. 1732-1740</em>, 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a href="https://repository.isls.org/handle/1/9996" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+            <a href="/assets/pdf/icls23-symposium.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-altmetric-id="" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+            <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"></div>
+
+        <!-- Entry bib key -->
+        <div id="reardon2022game" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Game Learning Analytics</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Emily Reardon, <em>Vishesh Kumar</em>, and Glenda Revelle</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>Handbook of Learning Analytics</em>, 2022
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a href="https://www.solaresearch.org/publications/hla-22/hla22-chapter15/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+            <a href="/assets/pdf/HLA22_Chapter_15_Reardon.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-altmetric-id="" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+            <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
           </div>
 
           
@@ -201,50 +302,90 @@
         <div class="col-sm-2 abbr"><abbr class="badge">BJET</abbr></div>
 
         <!-- Entry bib key -->
-        <div id="kumar2022supporting" class="col-sm-8">
+        <div id="https://doi.org/10.1111/bjet.13274" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Supporting collaborative classroom networks through technology: An actor network theory approach to understanding social behaviours and design</div>
+        <!-- Author -->
+        <div class="author">
         
-          <!-- Title -->
-          <div class="title">Supporting collaborative classroom networks through technology: An actor network theory approach to understanding social behaviours and design</div>
-          <!-- Author -->
-          <div class="author">
-                  <em>Kumar, Vishesh</em>, and Tissenbaum, Mike
-          </div>
 
-          <!-- Journal/Book title and date -->
-          <div class="periodical">
-            <em>British Journal of Educational Technology</em> 2022
-          </div>
+        <em>Vishesh Kumar</em>, and Mike Tissenbaum</div>
+
+        <!-- Journal/Book title and date -->
         
+        
+        <div class="periodical">
+          <em>British Journal of Educational Technology</em>, 2022
+        </div>
+        <div class="periodical">
+          
+        </div>
+
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://doi.org/10.1111/bjet.13274" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+            <a href="/assets/pdf/bjet-ant.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-doi="https://doi.org/10.1111/bjet.13274" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+            <span class="__dimensions_badge_embed__" data-doi="https://doi.org/10.1111/bjet.13274" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Abstract This paper presents an implementation of Connected Spaces (CxS)—an ambient help seeking interface designed and developed for a project-based computing classroom. We use actor network theory (ANT) to provide an underutilized posthumanist lens to understand the creation of collaborative connections in this Computational Action-based implementation. Posthumanism offers an emerging and critical extension to sociocultural perspectives on understanding learning, by pushing us to decenter the human, and consider the active roles that human and non-human entities play in learning environments by actively shaping each other. We analyse how students in this class adjusted their help-seeking and collaborative habits following the introduction of CxS, a tool designed to foster (more inter-group) collaboration. ANT proposes generalized symmetry—a principle of considering human, non-human and more than human entities with equivalent and comparable agency, leading to describing phenomena as networks of actors in different evolving relationships with each other. Analysing collaborative interactions as fostered by CxS using an ANT approach supports design-based research—an iterative design revision process highlighting understandings about design as well as learning—by providing a temporal and informative lens into the relationship between actors and tools within the environment. Our key findings include a framing of technologies in classrooms as bridging agentic gaps between students and becoming actors engaging in different behaviours; learners enacting new agencies through technologies (for instance a more comfortable non-intrusive help seeker), and the need for voicing and teachers to connect help networks in CxS equipped classrooms. Practitioner notes What is already known about this topic Collaborative learning is a valuable skill and practice; opportunities to mentor others are critical in empowering minoritized learners, especially in STEM and computing disciplines. School norms solidify a power and expertise hierarchy between teachers and learners and fail to productively support learners in learning from each other. Additionally, lack of awareness about peers’ knowledge is a common hindrance in students knowing who to ask for help and how. What this paper adds An example of a designed interface called Connected Spaces with potential to foster more inter-student collaboration, especially outside of mandated within-group collaboration—in the form of cross-group help seeking and help giving. A design based research study using actor network theory highlighting the limitations of Connected Spaces in sparking notable behaviour change among students by itself but being retooled as a teacher support tool in enabling cross-group collaborations. Presenting conceptions of collaboration through technologies as bridging agentic gaps and acting with new agencies in performing help-seeking related actions. Provoking the idea of testing emerging technologies in classrooms along with sharing our analyses and reflections with the classroom as a key idea in computing education—surfacing the gap between designed intentions and the different kinds of extra social work needed in the on-ground success of different technologies. Implications for practice and/or policy Designers and researchers should create and test more interfaces alongside teachers across different classrooms and contexts aimed at supporting different kinds of voluntary collaborative interactions. Curricula, standards and school practices should further center providing students with opportunities to engage as mentors and build communities of learning across disciplines to empower minoritized students. Researchers engaging in design based research should consider using more posthumanist lenses to examine educational technologies and how they affect change in learning environments.</p>
+          </div>
         </div>
       </div>
 </li>
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">IDC</abbr></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">ISLS</abbr></div>
 
         <!-- Entry bib key -->
-        <div id="bodon2022youth" class="col-sm-8">
+        <div id="gutierrezinvited" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Invited symposium—Regional and socio-epistemic heterogeneity in the learning sciences: Supporting transnational dialogues on equity and justice</div>
+        <!-- Author -->
+        <div class="author">
         
-          <!-- Title -->
-          <div class="title">Youth Experiences with Authentically Embedded Computer Science in Sport</div>
-          <!-- Author -->
-          <div class="author">Bodon, Herminio, Worsley, Marcelo, and <em>Kumar, Vishesh</em>
-                
-          </div>
 
-          <!-- Journal/Book title and date -->
-          <div class="periodical">
-            <em>In Interaction Design and Children</em> 2022
-          </div>
+        Kris Gutiérrez, Chandan Dasgupta, Tugce Aldemir, and
+          <span class="more-authors" title="click to view 8 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '8 more authors' ? 'Maxine McKinney Royston, Roberto Roock, Rod Roscoe, Victor R Lee, Joshua Radinsky, Jasmine Y Ma, Ananda Marin,  others' : '8 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">8 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
         
+        
+        <div class="periodical">
+          <em></em> 2022
+        </div>
+        <div class="periodical">
+          
+        </div>
+
           <!-- Links/Buttons -->
           <div class="links">
+            <a href="/assets/pdf/ICLS22-symposium-epistemic-het.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-altmetric-id="" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+            <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
           </div>
 
           
@@ -258,21 +399,31 @@
 
         <!-- Entry bib key -->
         <div id="kumar2021procedural" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Procedural Collaboration in Educational Games: Supporting Complex System Understandings in Immersive Whole Class Simulations</div>
+        <!-- Author -->
+        <div class="author">
         
-          <!-- Title -->
-          <div class="title">Procedural Collaboration in Educational Games: Supporting Complex System Understandings in Immersive Whole Class Simulations</div>
-          <!-- Author -->
-          <div class="author">
-                  <em>Kumar, Vishesh</em>, Tissenbaum, Michael B, and Kim, Taehyun
-          </div>
 
-          <!-- Journal/Book title and date -->
-          <div class="periodical">
-            <em>Communication Studies</em> 2021
-          </div>
+        <em>Vishesh Kumar</em>, Michael B Tissenbaum, and Taehyun Kim</div>
+
+        <!-- Journal/Book title and date -->
         
+        
+        <div class="periodical">
+          <em>Communication Studies</em>, 2021
+        </div>
+        <div class="periodical">
+          
+        </div>
+
           <!-- Links/Buttons -->
           <div class="links">
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-altmetric-id="" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+            <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
           </div>
 
           
@@ -282,26 +433,28 @@
 </ol>
           </div>
 
+
           <!-- Social -->
-          <div class="social">
-            <div class="contact-icons">
-            <a href="mailto:%76%69%73%68%65%73%68%6B%61%79@%67%6D%61%69%6C.%63%6F%6D" title="email"><i class="fas fa-envelope"></i></a>
-            <a href="https://orcid.org/0000-0001-5097-7678" title="ORCID" target="_blank" rel="noopener noreferrer"><i class="ai ai-orcid"></i></a>
-            <a href="https://scholar.google.com/citations?user=udPfphwAAAAJ" title="Google Scholar" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar"></i></a>
-            <a href="https://www.researchgate.net/profile/Vishesh-Kumar/" title="ResearchGate" target="_blank" rel="noopener noreferrer"><i class="ai ai-researchgate"></i></a>
-            <a href="https://github.com/Visheshk" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/visheshk" title="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/visheshk" title="Twitter" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-            <a href="http://localhost:4000/feed.xml" title="RSS Feed"><i class="fas fa-rss-square"></i></a>
+            <div class="social">
+              <div class="contact-icons">
+                <a href="mailto:%76%69%73%68%65%73%68%6B%61%79@%67%6D%61%69%6C.%63%6F%6D" title="email"><i class="fas fa-envelope"></i></a>
+            <a href="https://orcid.org/0000-0001-5097-7678" title="ORCID" rel="external nofollow noopener" target="_blank"><i class="ai ai-orcid"></i></a>
+            <a href="https://scholar.google.com/citations?user=udPfphwAAAAJ" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a>
+            <a href="https://www.researchgate.net/profile/Vishesh-Kumar/" title="ResearchGate" rel="external nofollow noopener" target="_blank"><i class="ai ai-researchgate"></i></a>
+            <a href="https://github.com/Visheshk" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/visheshk" title="LinkedIn" rel="external nofollow noopener" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/visheshk" title="Twitter" rel="external nofollow noopener" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="/feed.xml" title="RSS Feed"><i class="fas fa-rss-square"></i></a>
             
-            </div>
 
-            <div class="contact-note">
-              I try to be responsive on email! Please feel free to reach out for papers, any other information, or wanting to even just chat!
+              </div>
 
+              <div class="contact-note">
+                I try to be responsive on email! Please feel free to reach out for papers, any other information, or wanting to even just chat!
+
+              </div>
+              
             </div>
-            
-          </div>
         </article>
 
 </div>
@@ -311,7 +464,7 @@
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        © Copyright 2023 Vishesh  Kumar. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.
+        © Copyright 2023 Vishesh  Kumar. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
 
       </div>
     </footer>
@@ -321,8 +474,7 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <!-- Bootsrap & MDB scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha256-l/1pMF/+J4TThfgARS6KwWrk/egwuVvhRzfLAMQ6Ds4=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha256-SyTu6CwrfOhaznYZPoolVw2rxoY7lKYKQvqbtqN93HI=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
 
     <!-- Masonry & imagesLoaded -->
@@ -331,9 +483,13 @@
   <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
     
   <!-- Medium Zoom JS -->
-  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
-  <script src="/assets/js/zoom.js"></script><!-- Load Common JS -->
-  <script src="/assets/js/common.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/zoom.js"></script><!-- Load Common JS -->
+  <script defer src="/assets/js/common.js"></script>
+
+    
+  <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+  <script async src="https://badge.dimensions.ai/badge.js"></script>
 
     <!-- MathJax -->
   <script type="text/javascript">
@@ -350,10 +506,88 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-58475433-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag(){ window.dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'UA-58475433-1');
   </script>
+    
+
+<!-- Scrolling Progress Bar -->
+<script type="text/javascript">
+  /*
+   * This JavaScript code has been adapted from the article 
+   * https://css-tricks.com/reading-position-indicator/ authored by Pankaj Parashar, 
+   * published on the website https://css-tricks.com on the 7th of May, 2014.
+   * Couple of changes were made to the original code to make it compatible 
+   * with the `al-foio` theme.
+   */
+  const progressBar = $("#progress");
+  /*
+   * We set up the bar after all elements are done loading.
+   * In some cases, if the images in the page are larger than the intended
+   * size they'll have on the page, they'll be resized via CSS to accomodate
+   * the desired size. This mistake, however, breaks the computations as the
+   * scroll size is computed as soon as the elements finish loading.
+   * To account for this, a minimal delay was introduced before computing the
+   * values.
+   */
+  window.onload = function () {
+    setTimeout(progressBarSetup, 50);
+  };
+  /*
+   * We set up the bar according to the browser.
+   * If the browser supports the progress element we use that.
+   * Otherwise, we resize the bar thru CSS styling
+   */
+  function progressBarSetup() {
+    if ("max" in document.createElement("progress")) {
+      initializeProgressElement();
+      $(document).on("scroll", function() {
+        progressBar.attr({ value: getCurrentScrollPosition() });
+      });
+      $(window).on("resize", initializeProgressElement);
+    } else {
+      resizeProgressBar();
+      $(document).on("scroll", resizeProgressBar);
+      $(window).on("resize", resizeProgressBar);
+    }
+  }
+  /*
+   * The vertical scroll position is the same as the number of pixels that
+   * are hidden from view above the scrollable area. Thus, a value > 0 is
+   * how much the user has scrolled from the top
+   */
+  function getCurrentScrollPosition() {
+    return $(window).scrollTop();
+  }
+
+  function initializeProgressElement() {
+    let navbarHeight = $("#navbar").outerHeight(true);
+    $("body").css({ "padding-top": navbarHeight });
+    $("progress-container").css({ "padding-top": navbarHeight });
+    progressBar.css({ top: navbarHeight });
+    progressBar.attr({
+      max: getDistanceToScroll(),
+      value: getCurrentScrollPosition(),
+    });
+  }
+  /*
+   * The offset between the html document height and the browser viewport
+   * height will be greater than zero if vertical scroll is possible.
+   * This is the distance the user can scroll
+   */
+  function getDistanceToScroll() {
+    return $(document).height() - $(window).height();
+  }
+
+  function resizeProgressBar() {
+    progressBar.css({ width: getWidthPercentage() + "%" });
+  }
+  // The scroll ratio equals the percentage to resize the bar
+  function getWidthPercentage() {
+    return (getCurrentScrollPosition() / getDistanceToScroll()) * 100;
+  }
+</script>
+
   </body>
 </html>
-
